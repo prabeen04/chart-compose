@@ -1,0 +1,63 @@
+.App {
+  max-width: 1200px;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 100px 1fr 200px;
+  .chartControls {
+    display: grid;
+    gap: 1rem;
+    .iconBox {
+      display: grid;
+      justify-content: center;
+      place-items: center;
+      gap: 1rem;
+      border: 1px solid #f4f4f4;
+      border-radius: 4px;
+      padding: 1rem;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+
+      svg {
+        fill: #222222;
+        font-size: 2rem;
+      }
+      .name {
+        color: #222222d6;
+        font-size: 1.2rem;
+      }
+    }
+    .selected {
+      border: 2px solid rgb(25, 99, 184);
+      svg {
+        fill: #3677cc;
+      }
+    }
+  }
+  .chartBody {
+    border: 1px solid #f4f4f4;
+    padding: 1rem;
+    .loading {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+    }
+    .empty {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+    }
+  }
+  .metrics {
+    display: grid;
+    gap: 1rem;
+    font-size: 1.2rem;
+    align-content: flex-start;
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    padding: 1rem;
+  }
+}

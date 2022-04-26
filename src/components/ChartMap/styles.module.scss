@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 6px;
+  justify-items: center;
+  align-content: center;
+  .noData {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    svg {
+      font-size: 4rem;
+      fill: #3677cc;
+    }
+  }
+}
